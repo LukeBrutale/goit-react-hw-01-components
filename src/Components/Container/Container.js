@@ -1,5 +1,5 @@
 import s from './Container.module.css';
-//рендерит своих детей
+//рендерит детей
 function Container({ children }) {
   return <div className={s.container}>{children}</div>;
 }
