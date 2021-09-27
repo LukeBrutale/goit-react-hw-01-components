@@ -9,27 +9,26 @@ const Profile = ({ name, tag, location, avatar, stats }) => {
           className={s.img}
           src={avatar}
           alt="Аватар пользователя"
-          class="avatar"
           width="270"
           height="260"
         />
         <p className={s.name}>{name}</p>
-        <p class="tag">@{tag}</p>
-        <p class="location">{location}</p>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
 
       <ul className={s.stats}>
         <li>
-          <span class="label">Followers </span>
-          <span class="quantity">{stats.followers}</span>
+          <span className={s.label}>Followers </span>
+          <span className={s.quantity}>{stats.followers}</span>
         </li>
         <li>
-          <span class="label">Views </span>
-          <span class="quantity">{stats.views}</span>
+          <span className={s.label}>Views </span>
+          <span className={s.quantity}>{stats.views}</span>
         </li>
         <li>
-          <span class="label">Likes </span>
-          <span class="quantity">{stats.likes}</span>
+          <span className={s.label}>Likes </span>
+          <span className={s.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>

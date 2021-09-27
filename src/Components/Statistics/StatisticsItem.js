@@ -4,8 +4,8 @@ import s from './Statistical.module.css';
 const StatisticsItem = ({ label, percentage }) => {
   return (
     <div className={s.itemWrapper}>
-      <span class="label">{label}</span>
-      <span class="percentage">{percentage}%</span>
+      <span className={s.label}>{label}</span>
+      <span className={s.percentage}>{percentage}%</span>
     </div>
   );
 };

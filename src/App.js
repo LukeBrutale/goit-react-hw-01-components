@@ -19,7 +19,7 @@ export default function App() {
   return (
     <div>
       <Container>
-        <Section title="Задание 1 - Профиль социальной сети">
+        <Section>
           <Profile
             name={user.name}
             tag={user.tag}
@@ -31,20 +31,19 @@ export default function App() {
       </Container>
 
       <Container>
-        <Section title="Задание 2 - Секция статистики">
-          <StatisticsList stats={statisticalData} />
-          <StatisticsList title="Upload stats" stats={statisticalData} />;
+        <Section>
+          <StatisticsList title="Upload stats" stats={statisticalData} />
         </Section>
       </Container>
 
       <Container>
-        <Section title="Задание 3 - Список друзей">
+        <Section>
           <FriendList items={amigos} />
         </Section>
       </Container>
 
       <Container>
-        <Section title="Задание 4 - История транзакций">
+        <Section>
           <TransactionHistory items={transactionHistory} />
         </Section>
       </Container>
